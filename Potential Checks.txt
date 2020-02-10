@@ -6,3 +6,29 @@ distance between macula and optic disc, vs DR positive
 diameter of the optic disc vs DR positive
 
 AM/FM classification vs DR positive
+
+
+
+
+Ripping out all bad quality checks (Attriube 1's of data attribute 0)
+
+Data attribute 1's , check prescreening vs diabectric retina (Data Attribute 19)
+
+Data attribute 2-7 checked against the messidor classes (Data attribute 19)
+
+Data attribute 8-15 checked against the messidor classes (Data attribute 19)
+
+
+distance between macula and optic disc, vs DR positive
+
+diameter of the optic disc vs DR positive
+
+AM/FM classification vs DR positive
+
+Checking pre-screening (Dataset attribute 1) against MA Detection (Data attribute 2-7)
+
+Checking pre-screening (Dataset attribute 1) against Exudates Detection (Data attribute 8-15)
+
+Checking between distance and the optic nerve and how large the optic nerve is. (Attribute 16 and 17)
+
+
