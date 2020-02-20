@@ -1,0 +1,62 @@
+1.1. Linear Models
+Could work for comparison of corolation of two values, but basic for wider analysis
+
+1.2. Linear and Quadratic Discriminant Analysis
+Similar to linear models, but multiclass (good for many dimential data)
+
+1.3. Kernel ridge regression
+too complex
+
+1.4. Support Vector Machines
+effective on high dimential spaces, but require crosws validation, which is expensive on large datasets
+
+1.5. Stochastic Gradient Descent
+Effective on sparse, large datasets. 
+
+1.6. Nearest Neighbors
+Compares to similar records in the training data, works best on irregular decision boundaries
+
+1.7. Gaussian Processes
+Probablistic Classifier, can determine empirical confidence intervals, 
+interpolates the observations
+
+1.8. Cross decomposition
+Requires two seperate multivariate datasets, we only have one
+
+1.9. Naive Bayes
+small amount of training data
+Bad estimater
+
+1.10. Decision Trees
+Tend to overfit
+Creates biased trees
+Cannot fit every problem
++ is a white box model
+
+1.11. Ensemble methods
+Use multiple estimators to average and counteract bias
+
+1.12. Multiclass and multilabel algorithms
+Not applicable as one classification value
+
+1.13. Feature selection ++
+Could be useful for pre processing, would allow us to remove zero-variance features, and reduce diamentionality
+univariate feature selection
+
+1.14. Semi-Supervised
+Non applicable, all samples labeled
+
+1.15. Isotonic regression
+Minimalistic
+regresasion algorithm, we require clasification
+
+1.16. Probability calibration
+Additive to other clasification algorithms, adds probablistic classification or calibrates the probablistic
+
+1.17. Neural network models (supervised)
+non-linear models
+requires tuning hyperparameters
+sensitive to feature scaling
+
+
+
