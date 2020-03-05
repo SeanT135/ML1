@@ -4,6 +4,12 @@ from matplotlib import *
 from pandas import *
 from sklearn import *
 
+# -*- coding: utf-8 -*-
+
+from matplotlib import *
+from pandas import *
+from sklearn import *
+
 csvData = pandas.read_csv("messidor_features.csv", sep=',', header=0, index_col=False, skipinitialspace=True)
 # Parameters: Filepath, Seperating Character, Header Row, Index Column (set to false, as no index column), Skip Initial Space (Ignores whitespace after seperationg character)
 
@@ -52,7 +58,7 @@ while jkCount < 10:
     X_scaled_train = scaler.transform(X_train)
     X_scaled_test = scaler.transform(X_test)
 
-    clf = svm.SVC(kernel='rbf')
+    clf = neighbors.KNeighborsClassifier(n_neighbors=7)
     clf.fit(X_train, y_train)
     y_predict = clf.predict(X_test)
     

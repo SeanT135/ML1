@@ -1,0 +1,15 @@
+Nearest Neighbour
+https://scikit-learn.org/stable/modules/neighbors.html
+https://stackabuse.com/k-nearest-neighbors-algorithm-in-python-and-scikit-learn/
+
+Gaussian Processes
+https://scikit-learn.org/stable/modules/gaussian_process.html
+
+Naive Bayes
+https://scikit-learn.org/stable/modules/naive_bayes.html
+
+Feature Selection
+https://scikit-learn.org/stable/modules/feature_selection.html
+
+Neural Network Models
+https://scikit-learn.org/stable/modules/neural_networks_supervised.html

@@ -52,7 +52,7 @@ while jkCount < 10:
     X_scaled_train = scaler.transform(X_train)
     X_scaled_test = scaler.transform(X_test)
 
-    clf = svm.SVC(kernel='rbf')
+    clf = neural_network.MLPClassifier(max_iter = 1000)
     clf.fit(X_train, y_train)
     y_predict = clf.predict(X_test)
     
