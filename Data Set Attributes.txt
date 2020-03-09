@@ -10,7 +10,7 @@
 
 	MA: Microaneurysms
 
-8-15) contain the same information as 2-7) for exudates. However, as exudates are represented by a set of points rather than the number of pixels constructing the lesions, these features are normalized by dividing the number of lesions with the diameter of the ROI to compensate different image sizes.
+8-15) contain the same information as 2-7) for exudates. However, as exudates are represented by a set of points rather than the number of pixels constructing the lesions, these features are normalized by dividing the number of lesions with the diameter of the region of interest to compensate different image sizes.
 
 	Exudates: Leakage of a fluid composed of serum, fibrin, and white blood cells.
 	ROI: Region of Interest

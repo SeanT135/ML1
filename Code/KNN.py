@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from matplotlib import *
 from pandas import *
 from sklearn import *
 
@@ -13,19 +12,19 @@ from sklearn import *
 csvData = pandas.read_csv("messidor_features.csv", sep=',', header=0, index_col=False, skipinitialspace=True)
 # Parameters: Filepath, Seperating Character, Header Row, Index Column (set to false, as no index column), Skip Initial Space (Ignores whitespace after seperationg character)
 
-csvDataX = csvData
-csvDataX.drop(index=19)
-csvDataY = csvData['Messidor Class']
-
-
-#print (csvData.size) 
-
+csvDataX = csvData.copy()
+csvDataX = csvDataX.drop(['Messidor Class'], 1)
 jkCount = 0 # Jackknife Method counter for loop
 
 # TP: True Positive
 # FP: False Positive
 # TN: True Negative
 # FN: False Negative
+
+csvDataY = csvData['Messidor Class']
+
+
+#print (csvData.size) 
 
 
 # Accuracy Scores: Accuracy = (TP+TN)/(TP+FP+FN+TN)
@@ -57,7 +56,9 @@ while jkCount < 10:
 
     X_scaled_train = scaler.transform(X_train)
     X_scaled_test = scaler.transform(X_test)
-
+    
+    print(X_test)
+    
     clf = neighbors.KNeighborsClassifier(n_neighbors=7)
     clf.fit(X_train, y_train)
     y_predict = clf.predict(X_test)

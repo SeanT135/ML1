@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 
-from matplotlib import *
 from pandas import *
 from sklearn import *
 
 csvData = pandas.read_csv("messidor_features.csv", sep=',', header=0, index_col=False, skipinitialspace=True)
 # Parameters: Filepath, Seperating Character, Header Row, Index Column (set to false, as no index column), Skip Initial Space (Ignores whitespace after seperationg character)
 
-csvDataX = csvData
-csvDataX.drop(index=19)
+csvDataX = csvData.copy()
+csvDataX = csvDataX.drop(['Messidor Class'], 1)
 csvDataY = csvData['Messidor Class']
 
 
